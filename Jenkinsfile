@@ -10,7 +10,7 @@ pipeline {
             steps {
                 dir("Maven-Deploy")
                 {
-                    powershell 'mvn clean deploy'
+                    powershell 'mvn clean install'
                 }
                 
             }
