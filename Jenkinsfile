@@ -10,7 +10,7 @@ pipeline {
         stage("Clean Up"){
             steps {
                 echo "################ CLEAR WORKSPACE ###################"
-                clear ws()
+                //clear ws()
             }
         }
         stage("Build"){
