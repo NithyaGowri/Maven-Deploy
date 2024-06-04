@@ -10,14 +10,14 @@ pipeline {
         stage("Clean Up"){
             steps {
                 echo "################ CLEAR WORKSPACE ###################"
-                deleteDir()
+                clear ws()
             }
         }
         stage("Build"){
             steps {
                 
                     echo "######################## Maven Deployment ########################"
-                    powershell 'mvn clean --file pom.xml'
+                    powershell 'mvn clean install'
                 
                 
             }
