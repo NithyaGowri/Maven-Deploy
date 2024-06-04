@@ -15,11 +15,10 @@ pipeline {
         }
         stage("Build"){
             steps {
-                dir("Maven-Deploy")
-                {
+                
                     echo "######################## Maven Deployment ########################"
                     powershell 'mvn clean deploy'
-                }
+                
                 
             }
         }
