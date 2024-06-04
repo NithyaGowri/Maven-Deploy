@@ -17,7 +17,7 @@ pipeline {
             steps {
                 
                     echo "######################## Maven Deployment ########################"
-                    powershell 'mvn clean deploy'
+                    powershell 'mvn clean --file *.pom'
                 
                 
             }
